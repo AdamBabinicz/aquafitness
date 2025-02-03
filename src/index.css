@@ -11,4 +11,5 @@ body,
   height: 100%;
   background: #010026;
   @apply text-white;
+  overflow-x: hidden;
 }
