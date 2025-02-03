@@ -6,7 +6,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
 
   return (
     <div className="flex flex-col gap-6 fixed top-[60%] right-7">
-      <AnchorLink
+      <a
         href="#start"
         aria-label="Przejdź do sekcji start"
         className={`${
@@ -15,7 +15,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
         onClick={() => setSelectedPage("start")}
       />
 
-      <AnchorLink
+      <a
         href="#cele"
         aria-label="Przejdź do sekcji cele"
         className={`${
@@ -24,7 +24,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
         onClick={() => setSelectedPage("cele")}
       />
 
-      <AnchorLink
+      <a
         href="#foto-teka"
         aria-label="Przejdź do sekcji foto-teka"
         className={`${
@@ -33,7 +33,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
         onClick={() => setSelectedPage("foto-teka")}
       />
 
-      <AnchorLink
+      <a
         href="#uczestnicy"
         aria-label="Przejdź do sekcji uczestnicy"
         className={`${
@@ -42,7 +42,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
         onClick={() => setSelectedPage("uczestnicy")}
       />
 
-      <AnchorLink
+      <a
         href="#kontakt"
         aria-label="Przejdź do sekcji kontakt"
         className={`${
