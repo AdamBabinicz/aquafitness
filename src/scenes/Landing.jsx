@@ -31,14 +31,14 @@ const Landing = ({ setSelectedPage }) => {
             <img
               alt="trenerka"
               className="relative hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]absolute top-[-30px] left-0"
-              src="assets/mariola2.png"
+              src="assets/mariola2.avif"
             />
           </div>
         ) : (
           <img
             alt="profile"
             className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="assets/1.png"
+            src="assets/10.avif"
           />
         )}
       </div>
