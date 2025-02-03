@@ -48,6 +48,7 @@ const MySkills = () => {
                 alt="skills"
                 className="z-10 w-full h-[500px] object-cover"
                 src="assets/37.avif"
+                loading="lazy"
               />
             </div>
           ) : (
@@ -55,6 +56,7 @@ const MySkills = () => {
               alt="skills"
               className="z-10 w-full h-[500px] object-cover"
               src="assets/37.avif"
+              loading="lazy"
             />
           )}
         </div>

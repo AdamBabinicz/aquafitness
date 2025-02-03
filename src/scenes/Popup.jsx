@@ -17,7 +17,12 @@ const Popup = ({ closePopup }) => {
         <p className="mb-4 text-gray-700">
           W grupach przeważają kobiety, mężczyźni są jak na lekarstwo.
         </p>
-        <img src="assets/12.avif" alt="Popup Image" className="w-full h-auto" />
+        <img
+          src="assets/12.avif"
+          alt="Popup Image"
+          className="w-full h-auto"
+          loading="lazy"
+        />
       </div>
     </div>
   );

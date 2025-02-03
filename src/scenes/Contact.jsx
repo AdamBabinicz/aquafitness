@@ -67,7 +67,7 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="assets/ewa2.avif" alt="trenerka" />
+          <img src="assets/ewa2.avif" alt="trenerka" loading="lazy" />
         </motion.div>
 
         <motion.div

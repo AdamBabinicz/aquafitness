@@ -32,6 +32,7 @@ const Project = ({ title, id, desc }) => {
         src={`../assets/images/${id}.avif`}
         alt={`Project ${projectNumber}`}
         className="w-full h-[300px] object-cover"
+        loading="lazy"
       />
     </motion.div>
   );
