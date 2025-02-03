@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom"; // Usunięcie BrowserRouter
 import Navbar from "./scenes/Navbar";
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
@@ -10,11 +11,23 @@ import Footer from "./scenes/Footer";
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { motion } from "framer-motion";
+import CookieConsent from "react-cookie-consent";
+import PrivacyPolicy from "./PrivacyPolicy";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("start");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 1060px)");
+  const [showPrivacyModal, setShowPrivacyModal] = useState(false);
+
+  const handleOpenPrivacyPolicy = (e) => {
+    e.preventDefault();
+    setShowPrivacyModal(true);
+  };
+
+  const handleClosePrivacyPolicy = () => {
+    setShowPrivacyModal(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -60,7 +73,6 @@ function App() {
           <MySkills />
         </motion.div>
       </div>
-      {/* <LineGradient /> */}
       <div className="w-5/6 mx-auto">
         <motion.div
           margin="0 0 -200px 0"
@@ -80,7 +92,6 @@ function App() {
           <Testimonials />
         </motion.div>
       </div>
-      {/* <LineGradient /> */}
       <div className="w-5/6 mx-auto">
         <motion.div
           margin="0 0 -200px 0"
@@ -91,7 +102,34 @@ function App() {
         </motion.div>
       </div>
       <Footer />
+      <Routes>
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+      </Routes>
+      {showPrivacyModal && <PrivacyPolicy onClose={handleClosePrivacyPolicy} />}
+      <CookieConsent
+        location="bottom"
+        buttonText="Zgadzam się"
+        declineButtonText="Nie zgadzam się"
+        cookieName="myCookieConsent"
+        aria-label="Zgadzam się na pliki cookies"
+        declineAriaLabel="Nie zgadzam się na pliki cookies"
+      >
+        Nasza strona używa plików cookies w&nbsp;celu zapewnienia lepszej
+        funkcjonalności, personalizacji treści oraz analizy ruchu na stronie.
+        Dzięki plikom cookies możemy dostosować stronę do Twoich potrzeb
+        i&nbsp;preferencji. Możesz dowiedzieć się więcej o&nbsp;wykorzystywanych
+        plikach cookies oraz sposobach ich zarządzania w&nbsp;naszej&nbsp;
+        <a
+          href="/privacypolicy"
+          onClick={handleOpenPrivacyPolicy}
+          className="text-blue hover:text-dark-grey font-semibold underline mt-4 inline-block transition-colors duration-300 ease-in-out"
+        >
+          Polityce Prywatności
+        </a>
+        .
+      </CookieConsent>
     </div>
   );
 }
+
 export default App;
