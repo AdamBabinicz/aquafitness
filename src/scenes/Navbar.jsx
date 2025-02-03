@@ -1,69 +1,102 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import menuOpen from "../assets/menu-icon.svg";
 import menuClose from "../assets/close-icon.svg";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const Link = ({ page, selectedPage, setSelectedPage, setIsMenuToggled }) => {
+const Link = ({ page, selectedPage, setSelectedPage, closeMenu }) => {
   const lowerCasePage = page.toLowerCase();
+  const handleClick = () => {
+    const section = document.getElementById(lowerCasePage);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setSelectedPage(lowerCasePage);
+      closeMenu();
+    }
+  };
   return (
-    <AnchorLink
+    <a
       className={`${
         selectedPage === lowerCasePage ? "text-yellow" : ""
-      } hover:text-yellow transition duration-500`}
-      href={`#${lowerCasePage}`}
-      onClick={() => {
-        setSelectedPage(lowerCasePage);
-        setIsMenuToggled(false); // Zamknięcie menu po kliknięciu
-      }}
+      } hover:text-yellow transition duration-500 cursor-pointer`}
+      onClick={handleClick}
     >
       {page}
-    </AnchorLink>
+    </a>
   );
 };
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
-  const isAboveSmallScreen = useMediaQuery("(min-width: 768px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-deepBlue";
+  const [isScrolled, setIsScrolled] = useState(false);
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log("scrollY:", window.scrollY); // Logowanie scrollY
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navbarBackground = isScrolled ? "bg-deepBlue" : "";
+
+  // Funkcja do zamykania menu
+  const closeMenu = () => {
+    setIsMenuToggled(false);
+  };
 
   return (
-    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
+    // <nav
+    //   className={`${navbarBackground} z-40 w-full fixed top-0 py-6 transition-all`}
+    // >
+    <nav
+      className={`${
+        isScrolled ? "bg-deepBlue" : ""
+      } z-40 w-full fixed top-0 py-6 transition-all`}
+    >
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-playfair text-3xl font-bold">Tablo Aqua Fitness</h4>
 
         {/* DESKTOP NAV */}
-        {isAboveSmallScreen ? (
+        {isDesktop ? (
           <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
             <Link
               page="Start"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-              setIsMenuToggled={setIsMenuToggled} // Przekazanie funkcji do Link
+              closeMenu={closeMenu}
             />
             <Link
               page="Cele"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-              setIsMenuToggled={setIsMenuToggled} // Przekazanie funkcji do Link
+              closeMenu={closeMenu}
             />
             <Link
               page="Foto-teka"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-              setIsMenuToggled={setIsMenuToggled} // Przekazanie funkcji do Link
+              closeMenu={closeMenu}
             />
             <Link
               page="Uczestnicy"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-              setIsMenuToggled={setIsMenuToggled} // Przekazanie funkcji do Link
+              closeMenu={closeMenu}
             />
             <Link
               page="Kontakt"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-              setIsMenuToggled={setIsMenuToggled} // Przekazanie funkcji do Link
+              closeMenu={closeMenu}
             />
           </div>
         ) : (
@@ -76,7 +109,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         )}
 
         {/* MOBILE MENU POPUP */}
-        {!isAboveSmallScreen && isMenuToggled && (
+        {!isDesktop && isMenuToggled && (
           <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
@@ -90,31 +123,31 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 page="Start"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
-                setIsMenuToggled={setIsMenuToggled} // Przekazanie funkcji do Link
+                closeMenu={closeMenu}
               />
               <Link
                 page="Cele"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
-                setIsMenuToggled={setIsMenuToggled} // Przekazanie funkcji do Link
+                closeMenu={closeMenu}
               />
               <Link
                 page="Foto-teka"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
-                setIsMenuToggled={setIsMenuToggled} // Przekazanie funkcji do Link
+                closeMenu={closeMenu}
               />
               <Link
                 page="Uczestnicy"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
-                setIsMenuToggled={setIsMenuToggled} // Przekazanie funkcji do Link
+                closeMenu={closeMenu}
               />
               <Link
                 page="Kontakt"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
-                setIsMenuToggled={setIsMenuToggled} // Przekazanie funkcji do Link
+                closeMenu={closeMenu}
               />
             </div>
           </div>

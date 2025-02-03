@@ -6,7 +6,7 @@ const Popup = ({ closePopup }) => {
       <div className="bg-white p-6 rounded-lg w-11/12 sm:w-4/5 md:w-1/2 lg:w-2/5 xl:w-1/3 relative h-auto">
         <button
           onClick={closePopup}
-          className="absolute top-4 right-4 text-2xl text-gray-700 hover:text-red-500"
+          className="absolute top-6 right-5 text-2xl text-gray-700 hover:text-red-500"
         >
           <FaTimes />
         </button>

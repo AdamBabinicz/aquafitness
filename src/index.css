@@ -10,6 +10,7 @@ body,
 .app {
   height: 100%;
   background: #010026;
+  scroll-behavior: smooth;
   @apply text-white;
   overflow-x: hidden;
 }

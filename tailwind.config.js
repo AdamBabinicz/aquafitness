@@ -4,13 +4,10 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
-      zIndex: {
-        9999: "9999",
-      },
       colors: {
         "deep-blue": "#010026",
         blue: "#2CBCE9",
-        deepBlue: "#1E3A8A",
+        deepBlue: "#1E3A8A !important",
         red: "#DC4492",
         yellow: "#FDCC49",
         grey: "#ededed",

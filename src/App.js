@@ -1,4 +1,3 @@
-import { Routes, Route } from "react-router-dom"; // Usunięcie BrowserRouter
 import Navbar from "./scenes/Navbar";
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
@@ -58,7 +57,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("home")}
+          onViewportEnter={() => setSelectedPage("start")}
         >
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
@@ -68,7 +67,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("skills")}
+          onViewportEnter={() => setSelectedPage("cele")}
         >
           <MySkills />
         </motion.div>
@@ -77,7 +76,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("projects")}
+          onViewportEnter={() => setSelectedPage("foto-teka")}
         >
           <Projects />
         </motion.div>
@@ -87,7 +86,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("testimonials")}
+          onViewportEnter={() => setSelectedPage("uczestnicy")}
         >
           <Testimonials />
         </motion.div>
@@ -96,15 +95,12 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("contact")}
+          onViewportEnter={() => setSelectedPage("kontakt")}
         >
           <Contact />
         </motion.div>
       </div>
       <Footer />
-      <Routes>
-        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-      </Routes>
       {showPrivacyModal && <PrivacyPolicy onClose={handleClosePrivacyPolicy} />}
       <CookieConsent
         location="bottom"
