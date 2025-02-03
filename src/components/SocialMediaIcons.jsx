@@ -8,6 +8,7 @@ const SocialMediaIcons = () => {
         href="https://www.linkedin.com"
         target="_blank"
         rel="noreferrer"
+        aria-label="Odwiedź mnie w Linkedin (otworzy się w nowym oknie)"
       >
         <FaLinkedin size={30} />
       </a>
@@ -16,6 +17,7 @@ const SocialMediaIcons = () => {
         href="https://x.com/home?lang=pl&mx=2"
         target="_blank"
         rel="noreferrer"
+        aria-label="Odwiedź mnie na Twitter (otworzy się w nowym oknie)"
       >
         <FaTwitter size={30} />
       </a>
@@ -24,6 +26,7 @@ const SocialMediaIcons = () => {
         href="https://www.facebook.com/adam.gierczak.334"
         target="_blank"
         rel="noreferrer"
+        aria-label="Odwiedź mnie na Facebooku (otworzy się w nowym oknie)"
       >
         <FaFacebook size={30} />
       </a>
@@ -32,6 +35,7 @@ const SocialMediaIcons = () => {
         href="https://www.pinterest.com"
         target="_blank"
         rel="noreferrer"
+        aria-label="Odwiedź mnie na Pinterest (otworzy się w nowym oknie)"
       >
         <FaPinterest size={30} />
       </a>

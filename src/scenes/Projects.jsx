@@ -109,7 +109,7 @@ const Projects = () => {
           <Project title="Neptun" id={15} desc="Zajęcia z P. xxx" />
           <Project title="Neptun" id={16} desc="Zajęcia z P. xxx" />
           <div
-            className="flex justify-center text-center items-center p-10 bg-blue w-full
+            className="flex justify-center text-center items-center p-10 bg-deepBlue w-full
                max-h-[400px] text-2xl font-playfair font-semibold"
           >
             Jeśli masz zdrowie, masz wszystko.
