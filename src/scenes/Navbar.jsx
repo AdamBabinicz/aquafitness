@@ -14,14 +14,14 @@ const Link = ({ page, selectedPage, setSelectedPage, closeMenu }) => {
     }
   };
   return (
-    <a
+    <button
       className={`${
         selectedPage === lowerCasePage ? "text-yellow" : ""
       } hover:text-yellow transition duration-500 cursor-pointer`}
       onClick={handleClick}
     >
       {page}
-    </a>
+    </button>
   );
 };
 
