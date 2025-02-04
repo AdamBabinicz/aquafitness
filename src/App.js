@@ -12,6 +12,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import CookieConsent from "react-cookie-consent";
 import PrivacyPolicy from "./PrivacyPolicy";
+import Test from "./scenes/Test";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("start");
@@ -100,6 +101,7 @@ function App() {
           <Contact />
         </motion.div>
       </div>
+      {/* <Test /> */}
       <Footer />
       {showPrivacyModal && <PrivacyPolicy onClose={handleClosePrivacyPolicy} />}
       <CookieConsent

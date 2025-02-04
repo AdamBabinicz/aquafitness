@@ -85,7 +85,7 @@ const Projects = () => {
           >
             Zajęcia z&nbsp;naszymi instruktorkami
           </div>
-          <Project title="Orka" id={1} desc="Zajęcia z P. xxx" />
+          <Project title="Orka" id={1} desc="Zajęcia z P. ---" />
           <Project title="Delfin" id={2} desc="Zajęcia z P. Ewą" />
 
           {/* ROW 2 */}
@@ -95,20 +95,20 @@ const Projects = () => {
 
           {/* ROW 3 */}
           <Project title="Orka" id={6} desc="Zajęcia z P. Ewą" />
-          <Project title="Orka" id={7} desc="Zajęcia z P. xxx" />
+          <Project title="Orka" id={7} desc="Zajęcia z P. ---" />
 
           {/* ROW 4 */}
-          <Project title="Orka" id={8} desc="Zajęcia z P. xxx" />
-          <Project title="Orka" id={9} desc="Zajęcia z P. xxx" />
+          <Project title="Orka" id={8} desc="Zajęcia z P. ---" />
+          <Project title="Orka" id={9} desc="Zajęcia z P. ---" />
           <Project title="Delfin" id={10} desc="Zajęcia z P. Ewą" />
           {/* ROW 5 */}
           <Project title="Delfin" id={11} desc="Zajęcia z P. Mariolą" />
-          <Project title="Neptun" id={12} desc="Zajęcia z P. xxx" />
+          <Project title="Neptun" id={12} desc="Zajęcia z P. ---" />
           <Project title="Delfin" id={13} desc="Zajęcia z P. Mariolą" />
           {/* ROW 6 */}
-          <Project title="Neptun" id={14} desc="Zajęcia z P. xxx" />
-          <Project title="Neptun" id={15} desc="Zajęcia z P. xxx" />
-          <Project title="Neptun" id={16} desc="Zajęcia z P. xxx" />
+          <Project title="Neptun" id={14} desc="Zajęcia z P. ---" />
+          <Project title="Neptun" id={15} desc="Zajęcia z P. ---" />
+          <Project title="Neptun" id={16} desc="Zajęcia z P. ---" />
           <div
             className="flex justify-center text-center items-center p-10 bg-deepBlue w-full
                max-h-[400px] text-2xl font-playfair font-semibold"

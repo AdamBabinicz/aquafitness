@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import { useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import menuOpen from "../assets/menu-icon.svg";
 import menuClose from "../assets/close-icon.svg";
@@ -26,27 +25,9 @@ const Link = ({ page, selectedPage, setSelectedPage, closeMenu }) => {
   );
 };
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
+const Navbar = ({ selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      console.log("scrollY:", window.scrollY); // Logowanie scrollY
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const navbarBackground = isScrolled ? "bg-deepBlue" : "";
 
   // Funkcja do zamykania menu
   const closeMenu = () => {
@@ -54,14 +35,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   };
 
   return (
-    // <nav
-    //   className={`${navbarBackground} z-40 w-full fixed top-0 py-6 transition-all`}
-    // >
-    <nav
-      className={`${
-        isScrolled ? "bg-deepBlue" : ""
-      } z-40 w-full fixed top-0 py-6 transition-all`}
-    >
+    <nav className="bg-deepBlue z-40 w-full fixed top-0 py-6 transition-bg">
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-playfair text-3xl font-bold">Tablo Aqua Fitness</h4>
 
