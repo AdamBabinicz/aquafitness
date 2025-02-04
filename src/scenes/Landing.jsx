@@ -88,7 +88,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <a
+          <button
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500 cursor-pointer"
             onClick={() => {
@@ -99,7 +99,7 @@ const Landing = ({ setSelectedPage }) => {
             }}
           >
             Kontakt
-          </a>
+          </button>
           {/* <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("kontakt")}
