@@ -91,9 +91,13 @@ const Landing = ({ setSelectedPage }) => {
         >
           <a
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-              hover:bg-blue hover:text-white transition duration-500"
-            onClick={() => setSelectedPage("kontakt")}
-            href="#kontakt"
+              hover:bg-blue hover:text-white transition duration-500 cursor-pointer"
+            onClick={() => {
+              setSelectedPage("kontakt");
+              document
+                .getElementById("kontakt")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Kontakt
           </a>
