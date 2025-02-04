@@ -20,7 +20,7 @@ const Popup = ({ closePopup }) => {
         <img
           src="assets/12.avif"
           alt="Popup Image"
-          className="w-full h-auto"
+          className="w-full h-auto sm:max-h-[400px]"
           loading="lazy"
         />
       </div>
