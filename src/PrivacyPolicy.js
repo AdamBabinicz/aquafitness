@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5"; // Ikona zamknięcia
 function PrivacyPolicy({ onClose }) {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-      <div className="bg-white p-6 mx-auto shadow-md rounded-md relative max-w-[95vw] max-h-[90vh] overflow-y-auto">
+      <div className="bg-white p-6 mx-auto shadow-md rounded-md relative max-w-[95vw] sm:max-w-[60vw] max-h-[90vh] overflow-y-auto">
         {/* Przycisk zamknięcia */}
         <button
           className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
