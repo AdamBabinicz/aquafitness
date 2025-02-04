@@ -44,7 +44,7 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">---</p>
+          <p className="text-center text-xl">Katarzyna</p>
         </motion.div>
 
         <motion.div
@@ -60,7 +60,7 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl text-shadow-lg">“</p>
-          <p className="text-center text-xl text-shadow-lg">---</p>
+          <p className="text-center text-xl text-shadow-lg">Janusz</p>
         </motion.div>
 
         <motion.div
