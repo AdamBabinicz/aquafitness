@@ -57,7 +57,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-4xl sm:text-5xl md:text-6xl font-playfair z-40 text-center md:text-start">
+          <p className="text-3xl sm:text-5xl md:text-6xl font-playfair z-40 text-center md:text-start">
             Wiecznie
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-0 xs:before:content-brush
