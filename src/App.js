@@ -117,13 +117,12 @@ function App() {
         Dzięki plikom cookies możemy dostosować stronę do Twoich potrzeb
         i&nbsp;preferencji. Możesz dowiedzieć się więcej o&nbsp;wykorzystywanych
         plikach cookies oraz sposobach ich zarządzania w&nbsp;naszej&nbsp;
-        <a
-          href="/privacypolicy"
+        <button
           onClick={handleOpenPrivacyPolicy}
           className="text-blue hover:text-dark-grey font-semibold underline mt-4 inline-block transition-colors duration-300 ease-in-out"
         >
           Polityce Prywatności
-        </a>
+        </button>
         .
       </CookieConsent>
     </div>
