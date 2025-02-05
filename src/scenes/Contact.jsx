@@ -103,7 +103,9 @@ const Contact = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             />
-
+            <label htmlFor="message" className="sr-only">
+              Wiadomość
+            </label>
             <motion.textarea
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
