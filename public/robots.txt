@@ -1,3 +1,16 @@
-# https://www.robotstxt.org/robotstxt.html
+# Zgoda na indeksowanie wszystkich stron przez roboty wyszukiwarek
 User-agent: *
-Disallow:
+Disallow: /admin/  # Zakaz indeksowania sekcji administracyjnej
+Disallow: /private/  # Zakaz indeksowania sekcji prywatnych
+Allow: /  # Pozwolenie na indeksowanie pozostałych stron
+
+# Dodatkowe zasady dla Googlebot
+User-agent: Googlebot
+Disallow: /no-google/  # Zakaz indeksowania stron przeznaczonych wyłącznie dla Googlebot
+
+# Dodatkowe zasady dla Bingbot
+User-agent: Bingbot
+Disallow: /no-bing/  # Zakaz indeksowania stron przeznaczonych wyłącznie dla Bingbot
+
+# Sitemaps
+Sitemap: https://aquafitness.netlify.app/sitemap.xml
