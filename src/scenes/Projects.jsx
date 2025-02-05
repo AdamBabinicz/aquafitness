@@ -57,9 +57,9 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
+          <h2 className="font-playfair font-semibold text-4xl">
             <span className="text-red">Foto</span> teka
-          </p>
+          </h2>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-[30%]" />
           </div>

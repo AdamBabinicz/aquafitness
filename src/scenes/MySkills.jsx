@@ -19,9 +19,9 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="font-playfair font-semibold text-4xl mb-5 text-center sm:text-start">
+          <h2 className="font-playfair font-semibold text-4xl mb-5 text-center sm:text-start">
             Nasze <span className="text-red">cele</span>
-          </p>
+          </h2>
           <LineGradient width="w-[41%] mx-auto w-[50%] md:ml-0" />
           <p className="mt-10 mb-7">
             Ćwiczenia w wodzie mają na celu poprawę kondycji, wzmacnianie mięśni

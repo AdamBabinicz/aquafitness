@@ -6,12 +6,12 @@ const Footer = () => {
       <div className="w-10/12 mx-auto">
         <SocialMediaIcons />
         <div className="md:flex justify-center md:justify-between text-center ">
-          <p className="font-playfair font-semibold text-2xl text-yellow">
+          <h3 className="font-playfair font-semibold text-2xl text-yellow">
             Aqua Fitness 55+
-          </p>
-          <p className="font-playfair text-md text-yellow">
+          </h3>
+          <h4 className="font-playfair text-md text-yellow">
             Radom 2025 - {new Date().getFullYear()}.
-          </p>
+          </h4>
         </div>
       </div>
     </footer>

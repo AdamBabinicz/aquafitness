@@ -45,9 +45,9 @@ const Contact = () => {
         className="flex justify-center sm:justify-end w-full"
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
+          <h2 className="font-playfair font-semibold text-4xl">
             <span className="text-yellow">Kontakt</span> z nami
-          </p>
+          </h2>
           <div className="flex md:justify-end my-5">
             <LineGradient width="w-[100%]" />
           </div>

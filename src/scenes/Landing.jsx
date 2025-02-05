@@ -67,13 +67,13 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </h1>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+          <h2 className="mt-10 mb-7 text-sm text-center md:text-start">
             Aqua-fitness to doskonały sposób na poprawę kondycji
             i&nbsp;wzmocnienie mięśni bez nadmiernego obciążania stawów, co
             czyni go idealnym dla osób w&nbsp;każdym wieku. Dzięki oporowi wody
             trening jest bardziej efektywny, poprawia krążenie i&nbsp;pomaga
             w&nbsp;redukcji stresu.
-          </p>
+          </h2>
         </motion.div>
 
         {/* CALL TO ACTIONS */}

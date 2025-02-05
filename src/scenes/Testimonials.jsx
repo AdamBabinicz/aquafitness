@@ -19,9 +19,9 @@ const Testimonials = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl mb-5 text-red">
+        <h2 className="font-playfair font-semibold text-4xl mb-5 text-red">
           Uczestnicy
-        </p>
+        </h2>
         <LineGradient width="mx-auto w-[50%] md:w-[14%] md:ml-0" />
         <p className="mt-10 text-xl sm:text-2xl">
           Zdrowie jest najważniejszym darem, a&nbsp;radość z&nbsp;życia pochodzi
