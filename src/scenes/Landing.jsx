@@ -57,7 +57,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-3xl sm:text-5xl md:text-6xl font-playfair z-40 text-center md:text-start">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-playfair z-40 text-center md:text-start">
             Wiecznie
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-0 xs:before:content-brush
@@ -65,7 +65,7 @@ const Landing = ({ setSelectedPage }) => {
             >
               &nbsp;młodzi
             </span>
-          </p>
+          </h1>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
             Aqua-fitness to doskonały sposób na poprawę kondycji
