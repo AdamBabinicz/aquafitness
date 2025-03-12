@@ -4,6 +4,9 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      spacing: {
+        "50rem": "50rem",
+      },
       colors: {
         "deep-blue": "#010026",
         blue: "#2CBCE9",
@@ -35,7 +38,13 @@ module.exports = {
         person6: "url('./assets/1.avif')",
         person7: "url('./assets/user.avif')",
         person8: "url('./assets/3.avif')",
-        person9: "url('./assets/7.avif')",
+        person9: "url('./assets/1-1.avif')",
+        person10: "url('./assets/1-2.avif')",
+        person11: "url('./assets/1-3.avif')",
+        person12: "url('./assets/1-4.avif')",
+        person13: "url('./assets/1-5.avif')",
+        person14: "url('./assets/1-6.avif')",
+        person15: "url('./assets/1-7.avif')",
       },
     },
     screens: {

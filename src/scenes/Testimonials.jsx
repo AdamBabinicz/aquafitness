@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <section
       id="uczestnicy"
-      className="min-h-auto md:min-h-screen pt-8 sm:py-12"
+      className="relative min-h-auto md:min-h-screen pt-8 sm:py-12 z-10"
     >
       {/* HEADING */}
       <motion.div
@@ -153,8 +153,8 @@ const Testimonials = () => {
           <p className="font-playfair text-6xl text-shadow-lg">“</p>
           <p className="text-center text-xl text-shadow-lg">Halina</p>
         </motion.div>
-        {/* <motion.div
-          className="mx-auto relative bg-red w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+        <motion.div
+          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
             before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person9"
           initial="hidden"
           whileInView="visible"
@@ -166,8 +166,113 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl text-shadow-lg">“</p>
-          <p className="text-center text-xl text-shadow-lg">---</p>
-        </motion.div> */}
+          <p className="text-center text-xl text-shadow-lg"></p>
+        </motion.div>
+        <motion.div
+          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          variants={{
+            hidden: { opacity: 0, scale: 0.8 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+        >
+          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="text-center text-xl text-shadow-lg"></p>
+        </motion.div>
+        <motion.div
+          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person11"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          variants={{
+            hidden: { opacity: 0, scale: 0.8 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+        >
+          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="text-center text-xl text-shadow-lg"></p>
+        </motion.div>
+        <motion.div
+          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person12"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          variants={{
+            hidden: { opacity: 0, scale: 0.8 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+        >
+          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="text-center text-xl text-shadow-lg"></p>
+        </motion.div>
+        <motion.div
+          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person13"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          variants={{
+            hidden: { opacity: 0, scale: 0.8 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+        >
+          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="text-center text-xl text-shadow-lg"></p>
+        </motion.div>
+        <motion.div
+          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person14"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          variants={{
+            hidden: { opacity: 0, scale: 0.8 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+        >
+          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="text-center text-xl text-shadow-lg"></p>
+        </motion.div>
+        <motion.div
+          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person15"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          variants={{
+            hidden: { opacity: 0, scale: 0.8 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+        >
+          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="text-center text-xl text-shadow-lg"></p>
+        </motion.div>
+        <motion.div
+          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person7"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          variants={{
+            hidden: { opacity: 0, scale: 0.8 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+        >
+          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="text-center text-xl text-shadow-lg"></p>
+        </motion.div>
       </div>
     </section>
   );

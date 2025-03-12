@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <section
       id="kontakt"
-      className="contact mt-0 pt-8 pb-8 sm:pb-12 sm:mt-32 sm:pt-8 "
+      className="contact mt-16 pt-8 pb-8 sm:pb-12 sm:mt-50rem sm:pt-8"
     >
       {/* HEADINGS */}
       <motion.div
