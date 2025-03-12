@@ -154,7 +154,7 @@ const Testimonials = () => {
           <p className="text-center text-xl text-shadow-lg">Halina</p>
         </motion.div>
         <motion.div
-          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+          className="mx-auto relative bg-deepBlue w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
             before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person9"
           initial="hidden"
           whileInView="visible"
@@ -184,7 +184,7 @@ const Testimonials = () => {
           <p className="text-center text-xl text-shadow-lg"></p>
         </motion.div>
         <motion.div
-          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+          className="mx-auto relative bg-deepBlue w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
             before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person11"
           initial="hidden"
           whileInView="visible"
@@ -214,7 +214,7 @@ const Testimonials = () => {
           <p className="text-center text-xl text-shadow-lg"></p>
         </motion.div>
         <motion.div
-          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+          className="mx-auto relative bg-deepBlue w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
             before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person13"
           initial="hidden"
           whileInView="visible"
@@ -244,7 +244,7 @@ const Testimonials = () => {
           <p className="text-center text-xl text-shadow-lg"></p>
         </motion.div>
         <motion.div
-          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+          className="mx-auto relative bg-deepBlue w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
             before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person15"
           initial="hidden"
           whileInView="visible"
