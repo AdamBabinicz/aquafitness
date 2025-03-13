@@ -48,7 +48,7 @@ const MySkills = () => {
               <img
                 alt="skills"
                 className="z-10 w-full h-[500px] object-cover"
-                src="assets/37.avif"
+                src="assets/fotka.jpg"
                 loading="lazy"
               />
             </div>
@@ -56,7 +56,7 @@ const MySkills = () => {
             <img
               alt="skills"
               className="z-10 w-full h-[500px] object-cover"
-              src="assets/37.avif"
+              src="assets/fotka1.jpg"
               loading="lazy"
             />
           )}
