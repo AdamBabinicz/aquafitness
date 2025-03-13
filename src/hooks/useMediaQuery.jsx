@@ -5,13 +5,17 @@ const useMediaQuery = (query) => {
 
   useEffect(() => {
     const media = window.matchMedia(query);
-    if (media.matches !== matches) {
-      setMatches(media.matches);
-    }
     const listener = () => setMatches(media.matches);
+
+    // Początkowe ustawienie wartości
+    setMatches(media.matches);
+
+    // Dodanie nasłuchiwania na zmianę rozmiaru okna
     window.addEventListener("resize", listener);
+
+    // Usunięcie nasłuchiwania po odmontowaniu komponentu
     return () => window.removeEventListener("resize", listener);
-  }, [matches, query]);
+  }, [query]); // Usunięcie 'matches' z tablicy zależności
 
   return matches;
 };

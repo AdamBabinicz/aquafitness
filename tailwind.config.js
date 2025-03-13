@@ -4,9 +4,9 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
-      spacing: {
-        "50rem": "50rem",
-      },
+      // spacing: {
+      //   "10rem": "10rem",
+      // },
       colors: {
         "deep-blue": "#010026",
         blue: "#2CBCE9",
