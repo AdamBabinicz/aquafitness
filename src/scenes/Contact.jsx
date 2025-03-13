@@ -82,7 +82,11 @@ const Contact = () => {
           className="basis-1/2 mt-10 md:mt-0"
         >
           <form onSubmit={handleSubmit}>
+            <label htmlFor="name" className="sr-only">
+              Imię i nazwisko
+            </label>
             <motion.input
+              id="name"
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
               type="text"
               name="name"
@@ -107,6 +111,7 @@ const Contact = () => {
               Wiadomość
             </label>
             <motion.textarea
+              id="message"
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
               placeholder="Wiadomość"

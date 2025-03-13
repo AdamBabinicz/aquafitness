@@ -107,7 +107,7 @@ function App() {
         buttonText="Zgadzam się"
         declineButtonText="Nie zgadzam się"
         cookieName="myCookieConsent"
-        declineAriaLabel="Nie zgadzam się na pliki cookies" // to jest poprawne
+        declineAriaLabel="Nie zgadzam się na pliki cookies"
       >
         Nasza strona używa plików cookies w&nbsp;celu zapewnienia lepszej
         funkcjonalności, personalizacji treści oraz analizy ruchu na stronie.
@@ -117,7 +117,7 @@ function App() {
         <button
           onClick={handleOpenPrivacyPolicy}
           className="text-blue hover:text-dark-grey font-semibold underline mt-4 inline-block transition-colors duration-300 ease-in-out"
-          aria-label="Przeczytaj Politykę Prywatności" // odpowiednia dostępna nazwa
+          aria-label="Przeczytaj Politykę Prywatności"
         >
           Polityce Prywatności
         </button>
