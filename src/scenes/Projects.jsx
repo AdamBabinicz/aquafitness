@@ -29,7 +29,7 @@ const Project = ({ title, id, desc }) => {
         <p className="mt-7">{desc}</p>
       </div>
       <img
-        src={`../assets/images/${id}.avif`}
+        src={`../assets/images/${id}.webp`}
         alt={`Project ${projectNumber}`}
         className="w-full h-[300px] object-cover"
         loading="lazy"
@@ -85,30 +85,94 @@ const Projects = () => {
           >
             Zajęcia z&nbsp;naszymi instruktorkami
           </div>
-          <Project title="Orka" id={1} desc="Zajęcia z P. Teresą" />
-          <Project title="Delfin" id={2} desc="Zajęcia z P. Ewą" />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={1}
+            desc="Zajęcia z P. Teresą"
+          />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={2}
+            desc="Zajęcia z P. Ewą"
+          />
 
           {/* ROW 2 */}
-          <Project title="Delfin" id={3} desc="Zajęcia z P. Ewą" />
-          <Project title="Delfin" id={4} desc="Zajęcia z P. Mariolą" />
-          <Project title="Orka" id={5} desc="Zajęcia z P. Ewą" />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={3}
+            desc="Zajęcia z P. Ewą"
+          />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={4}
+            desc="Zajęcia z P. Mariolą"
+          />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={5}
+            desc="Zajęcia z P. Ewą"
+          />
 
           {/* ROW 3 */}
-          <Project title="Orka" id={6} desc="Zajęcia z P. Ewą" />
-          <Project title="Orka" id={7} desc="Zajęcia z P. Teresą" />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={6}
+            desc="Zajęcia z P. Ewą"
+          />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={7}
+            desc="Zajęcia z P. Teresą"
+          />
 
           {/* ROW 4 */}
-          <Project title="Orka" id={8} desc="Zajęcia z P. Teresą" />
-          <Project title="Orka" id={9} desc="Zajęcia z P. Teresą" />
-          <Project title="Delfin" id={10} desc="Zajęcia z P. Ewą" />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={8}
+            desc="Zajęcia z P. Teresą"
+          />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={9}
+            desc="Zajęcia z P. Teresą"
+          />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={10}
+            desc="Zajęcia z P. Ewą"
+          />
           {/* ROW 5 */}
-          <Project title="Delfin" id={11} desc="Zajęcia z P. Mariolą" />
-          <Project title="Neptun" id={12} desc="Zajęcia z P. Teresą" />
-          <Project title="Delfin" id={13} desc="Zajęcia z P. Mariolą" />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={11}
+            desc="Zajęcia z P. Mariolą"
+          />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={12}
+            desc="Zajęcia z P. Teresą"
+          />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={13}
+            desc="Zajęcia z P. Mariolą"
+          />
           {/* ROW 6 */}
-          <Project title="Neptun" id={14} desc="Zajęcia z P. Olą" />
-          <Project title="Neptun" id={15} desc="Zajęcia z P. Olą" />
-          <Project title="Neptun" id={16} desc="Zajęcia z P. Olą" />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={14}
+            desc="Zajęcia z P. Olą"
+          />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={15}
+            desc="Zajęcia z P. Olą"
+          />
+          <Project
+            title="Fotka wygenerowana przez AI"
+            id={16}
+            desc="Zajęcia z P. Olą"
+          />
           <div
             className="flex justify-center text-center items-center p-10 bg-deepBlue w-full
                max-h-[400px] text-2xl font-playfair font-semibold"

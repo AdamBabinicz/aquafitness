@@ -43,7 +43,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
+          <p className="font-playfair text-6xl">&nbsp;</p>
           <p className="text-center text-xl">Katarzyna</p>
         </motion.div>
 
@@ -59,7 +59,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
           <p className="text-center text-xl text-shadow-lg">Janusz</p>
         </motion.div>
 
@@ -75,7 +75,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
+          <p className="font-playfair text-6xl">&nbsp;</p>
           <p className="text-center text-xl">Iwona</p>
         </motion.div>
         <motion.div
@@ -90,7 +90,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
           <p className="text-center text-xl text-shadow-lg">Adam</p>
         </motion.div>
         <motion.div
@@ -105,7 +105,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
+          <p className="font-playfair text-6xl">&nbsp;</p>
           <p className="text-center text-xl">Tadeusz</p>
         </motion.div>
         <motion.div
@@ -120,7 +120,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
           <p className="text-center text-xl text-shadow-lg">Barbara</p>
         </motion.div>
         <motion.div
@@ -135,7 +135,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
+          <p className="font-playfair text-6xl">&nbsp;</p>
           <p className="text-center text-xl">Elżbieta</p>
         </motion.div>
         <motion.div
@@ -150,7 +150,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
           <p className="text-center text-xl text-shadow-lg">Halina</p>
         </motion.div>
         <motion.div
@@ -165,7 +165,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
           <p className="text-center text-xl text-shadow-lg"></p>
         </motion.div>
         <motion.div
@@ -180,7 +180,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
           <p className="text-center text-xl text-shadow-lg"></p>
         </motion.div>
         <motion.div
@@ -195,8 +195,8 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl text-shadow-lg">“</p>
-          <p className="text-center text-xl text-shadow-lg"></p>
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
+          <p className="text-center text-xl text-shadow-lg">Maryla</p>
         </motion.div>
         <motion.div
           className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
@@ -210,7 +210,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
           <p className="text-center text-xl text-shadow-lg"></p>
         </motion.div>
         <motion.div
@@ -225,7 +225,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
           <p className="text-center text-xl text-shadow-lg"></p>
         </motion.div>
         <motion.div
@@ -240,7 +240,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
           <p className="text-center text-xl text-shadow-lg"></p>
         </motion.div>
         <motion.div
@@ -255,7 +255,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
           <p className="text-center text-xl text-shadow-lg"></p>
         </motion.div>
         <motion.div
@@ -270,7 +270,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl text-shadow-lg">“</p>
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
           <p className="text-center text-xl text-shadow-lg">
             czekamy na Ciebie
           </p>

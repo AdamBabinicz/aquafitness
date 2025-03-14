@@ -11,9 +11,7 @@ const Popup = ({ closePopup }) => {
           <FaTimes />
         </button>
 
-        <h2 className="text-2xl font-bold mb-4 text-gray-700">
-          Na basenie "Orka"
-        </h2>
+        <h2 className="text-2xl font-bold mb-4 text-gray-700">Na basenie</h2>
         <p className="mb-4 text-gray-700">
           W grupach przeważają kobiety, mężczyźni są jak na lekarstwo.
         </p>

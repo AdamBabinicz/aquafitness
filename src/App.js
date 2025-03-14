@@ -78,7 +78,7 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("foto-teka")}
         >
-          {/* <Projects /> */}
+          <Projects />
         </motion.div>
       </div>
       <LineGradient />
@@ -88,7 +88,7 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("uczestnicy")}
         >
-          {/* <Testimonials /> */}
+          <Testimonials />
         </motion.div>
       </div>
       <div className="w-5/6 mx-auto">
