@@ -56,7 +56,7 @@ const MySkills = () => {
             <img
               alt="skills"
               className="z-10 w-full h-[500px] object-cover"
-              src="assets/16.webp"
+              src="assets/images/16.webp"
               loading="lazy"
             />
           )}
