@@ -1421,3 +1421,6 @@ body,
     max-width: 600px;
   }
 }
+.no-script-frame {
+  display: none;
+}
