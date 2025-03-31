@@ -10,23 +10,11 @@ import Footer from "./scenes/Footer";
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import CookieConsent from "react-cookie-consent";
-import PrivacyPolicy from "./PrivacyPolicy";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("start");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 1060px)");
-  const [showPrivacyModal, setShowPrivacyModal] = useState(false);
-
-  const handleOpenPrivacyPolicy = (e) => {
-    e.preventDefault();
-    setShowPrivacyModal(true);
-  };
-
-  const handleClosePrivacyPolicy = () => {
-    setShowPrivacyModal(false);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -101,28 +89,6 @@ function App() {
         </motion.div>
       </div>
       <Footer />
-      {showPrivacyModal && <PrivacyPolicy onClose={handleClosePrivacyPolicy} />}
-      <CookieConsent
-        location="bottom"
-        buttonText="Zgadzam się"
-        declineButtonText="Nie zgadzam się"
-        cookieName="myCookieConsent"
-        declineAriaLabel="Nie zgadzam się na pliki cookies"
-      >
-        Nasza strona używa plików cookies w&nbsp;celu zapewnienia lepszej
-        funkcjonalności, personalizacji treści oraz analizy ruchu na stronie.
-        Dzięki plikom cookies możemy dostosować stronę do Twoich potrzeb
-        i&nbsp;preferencji. Możesz dowiedzieć się więcej o&nbsp;wykorzystywanych
-        plikach cookies oraz sposobach ich zarządzania w&nbsp;naszej&nbsp;
-        <button
-          onClick={handleOpenPrivacyPolicy}
-          className="text-blue hover:text-dark-grey font-semibold underline mt-4 inline-block transition-colors duration-300 ease-in-out"
-          aria-label="Przeczytaj Politykę Prywatności"
-        >
-          Polityce Prywatności
-        </button>
-        .
-      </CookieConsent>
     </div>
   );
 }
