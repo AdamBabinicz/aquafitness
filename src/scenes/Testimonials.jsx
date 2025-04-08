@@ -181,7 +181,7 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
-          <p className="text-center text-xl text-shadow-lg"></p>
+          <p className="text-center text-xl text-shadow-lg">Władysława</p>
         </motion.div>
         <motion.div
           className="mx-auto relative bg-deepBlue w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
@@ -211,7 +211,7 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
-          <p className="text-center text-xl text-shadow-lg"></p>
+          <p className="text-center text-xl text-shadow-lg">Iza</p>
         </motion.div>
         <motion.div
           className="mx-auto relative bg-deepBlue w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
@@ -226,7 +226,7 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
-          <p className="text-center text-xl text-shadow-lg"></p>
+          <p className="text-center text-xl text-shadow-lg">Beata</p>
         </motion.div>
         <motion.div
           className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
