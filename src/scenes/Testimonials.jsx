@@ -260,7 +260,7 @@ const Testimonials = () => {
         </motion.div>
         <motion.div
           className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person7"
+            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person14"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
