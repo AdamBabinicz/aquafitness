@@ -271,9 +271,7 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
-          <p className="text-center text-xl text-shadow-lg">
-            czekamy na Ciebie
-          </p>
+          <p className="text-center text-xl text-shadow-lg">---</p>
         </motion.div>
         <motion.div
           className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
