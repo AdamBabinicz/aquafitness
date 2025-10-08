@@ -47,6 +47,8 @@ module.exports = {
         person15: "url('./assets/y.avif')",
         person16: "url('./assets/niezn.avif')",
         person17: "url('./assets/user.avif')",
+        person18: "url('./assets/user.avif')",
+        person19: "url('./assets/user.avif')",
       },
     },
     screens: {
