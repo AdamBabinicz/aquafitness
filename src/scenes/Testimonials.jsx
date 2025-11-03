@@ -286,26 +286,7 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
-          <p className="text-center text-xl text-shadow-lg">
-            czekamy na Ciebie
-          </p>
-        </motion.div>
-        <motion.div
-          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person17"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.4, duration: 0.6 }}
-          variants={{
-            hidden: { opacity: 0, scale: 0.8 },
-            visible: { opacity: 1, scale: 1 },
-          }}
-        >
-          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
-          <p className="text-center text-xl text-shadow-lg">
-            czekamy na Ciebie
-          </p>
+          <p className="text-center text-xl text-shadow-lg">Dorota</p>
         </motion.div>
         <motion.div
           className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
@@ -320,8 +301,38 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
+          <p className="text-center text-xl text-shadow-lg">Lidia</p>
+        </motion.div>
+        <motion.div
+          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person19"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          variants={{
+            hidden: { opacity: 0, scale: 0.8 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+        >
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
+          <p className="text-center text-xl text-shadow-lg">Zofia</p>
+        </motion.div>
+        <motion.div
+          className="mx-auto relative bg-yellow w-[300px] h-[170px] flex flex-col justify-between p-16 mt-36
+            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person20"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          variants={{
+            hidden: { opacity: 0, scale: 0.8 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+        >
+          <p className="font-playfair text-6xl text-shadow-lg">&nbsp;</p>
           <p className="text-center text-xl text-shadow-lg">
-            czekamy na Ciebie
+            Czekamy na Ciebie
           </p>
         </motion.div>
       </div>
